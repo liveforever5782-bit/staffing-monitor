@@ -47,11 +47,12 @@
   .table-section .t-header h3 { font-size: 0.88rem; font-weight: 700; color: #333; }
   .table-section .t-header span { font-size: 0.7rem; color: #aaa; }
   .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  table { width: 100%; border-collapse: collapse; font-size: 0.82rem; min-width: 480px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
   th { background: #f7f8fc; padding: 9px 14px; text-align: left; color: #666; font-weight: 600; border-bottom: 2px solid #eee; white-space: nowrap; }
-  td { padding: 10px 14px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
+  td { padding: 10px 14px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; white-space: nowrap; }
   tr:last-child td { border-bottom: none; }
-  .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 7px; vertical-align: middle; flex-shrink: 0; }
+  .co-label { max-width: 130px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; vertical-align: middle; }
+  .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; vertical-align: middle; flex-shrink: 0; }
   .num { font-weight: 700; font-size: 0.95rem; }
   .rank { display: inline-block; width: 22px; height: 22px; border-radius: 50%; background: #eee; color: #777; font-size: 0.7rem; font-weight: 700; text-align: center; line-height: 22px; }
   .rank-1 { background: #ffd700; color: #7a5000; } .rank-2 { background: #c0c0c0; color: #444; } .rank-3 { background: #cd7f32; color: #fff; }
@@ -85,6 +86,10 @@
 
     /* テーブル */
     .table-section { margin: 10px 16px 24px; }
+    table { font-size: 0.75rem; }
+    th, td { padding: 8px 10px; }
+    .co-label { max-width: 90px; }
+    .num { font-size: 0.85rem; }
   }
 
   /* タブレット（601〜860px）*/
@@ -106,7 +111,7 @@
   <div class="header-right">
     <div class="badge-live">● LIVE DATA</div><br>
     最終収集：2026-03-26（2026-W12）<br>
-    生成：2026-03-26 10:34
+    生成：2026-03-26 10:37
   </div>
 </div>
 <div class="notice">
@@ -204,14 +209,14 @@ ranked.forEach((co, idx) => {
   const rank = idx + 1;
   const prv  = prev ? (prev[co.id]?.count ?? null) : null;
   const d    = prv != null ? pct(co.count, prv) : null;
-  let deltaStr = "初回データ";
+  let deltaStr = "初回";
   if (d !== null) {
     const sign = d > 0 ? "▲" : d < 0 ? "▼" : "→";
     const cls  = d > 0 ? "color:#e53935" : d < 0 ? "color:#1e88e5" : "color:#aaa";
     deltaStr   = `<span style="${cls};font-weight:600">${sign} ${Math.abs(d)}%</span>`;
   }
   const rankCls = rank <= 3 ? `rank rank-${rank}` : "rank";
-  tbody.innerHTML += `<tr><td><span class="${rankCls}">${rank}</span></td><td><span class="dot" style="background:${co.color}"></span>${co.name}</td><td style="text-align:right"><span class="num">${fmt(co.count)}</span> 件</td><td style="text-align:right">${total ? (co.count / total * 100).toFixed(1) + "%" : "—"}</td><td style="text-align:right">${fmtY(co.wage)}</td><td style="text-align:right">${deltaStr}</td></tr>`;
+  tbody.innerHTML += `<tr><td><span class="${rankCls}">${rank}</span></td><td><span class="dot" style="background:${co.color}"></span><span class="co-label">${co.name}</span></td><td style="text-align:right"><span class="num">${fmt(co.count)}</span> 件</td><td style="text-align:right">${total ? (co.count / total * 100).toFixed(1) + "%" : "—"}</td><td style="text-align:right">${fmtY(co.wage)}</td><td style="text-align:right">${deltaStr}</td></tr>`;
 });
 </script>
 </body>
