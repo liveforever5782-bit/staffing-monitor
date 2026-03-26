@@ -8,42 +8,93 @@
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif; background: #f0f2f6; color: #1a1a2e; }
-  .header { background: linear-gradient(135deg, #0d1b5e 0%, #1a3a8f 100%); color: #fff; padding: 20px 32px; display: flex; align-items: center; justify-content: space-between; }
-  .header-left h1 { font-size: 1.25rem; font-weight: 700; letter-spacing: 0.02em; }
-  .header-left p  { font-size: 0.78rem; opacity: 0.7; margin-top: 3px; }
-  .header-right   { text-align: right; font-size: 0.78rem; opacity: 0.75; line-height: 1.7; }
-  .badge-live     { display: inline-block; background: #00c896; color: #fff; font-size: 0.68rem; font-weight: 700; padding: 2px 8px; border-radius: 10px; margin-bottom: 4px; }
-  .notice { background: #e8f5e9; border-left: 4px solid #43a047; padding: 10px 32px; font-size: 0.78rem; color: #1b5e20; display: flex; align-items: center; gap: 8px; }
-  .section-label { padding: 20px 32px 8px; font-size: 0.72rem; font-weight: 700; color: #8892a4; letter-spacing: 0.1em; text-transform: uppercase; }
-  .kpi-row { display: flex; gap: 12px; padding: 0 32px 4px; flex-wrap: wrap; }
-  .kpi-card { background: #fff; border-radius: 10px; padding: 16px 20px; flex: 1; min-width: 160px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); border-top: 4px solid #ccc; }
-  .kpi-card .co-name { font-size: 0.73rem; color: #777; font-weight: 600; margin-bottom: 8px; }
-  .kpi-card .count   { font-size: 1.9rem; font-weight: 800; line-height: 1; }
-  .kpi-card .wage    { font-size: 0.88rem; font-weight: 600; margin-top: 8px; color: #444; }
-  .kpi-card .delta   { font-size: 0.72rem; margin-top: 4px; }
+
+  /* ── ヘッダー ── */
+  .header { background: linear-gradient(135deg, #0d1b5e 0%, #1a3a8f 100%); color: #fff; padding: 18px 24px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .header-left h1 { font-size: 1.1rem; font-weight: 700; letter-spacing: 0.02em; }
+  .header-left p  { font-size: 0.75rem; opacity: 0.7; margin-top: 3px; }
+  .header-right   { text-align: right; font-size: 0.75rem; opacity: 0.8; line-height: 1.7; flex-shrink: 0; }
+  .badge-live     { display: inline-block; background: #00c896; color: #fff; font-size: 0.65rem; font-weight: 700; padding: 2px 7px; border-radius: 10px; margin-bottom: 3px; }
+
+  /* ── お知らせ ── */
+  .notice { background: #e8f5e9; border-left: 4px solid #43a047; padding: 10px 24px; font-size: 0.78rem; color: #1b5e20; }
+
+  /* ── セクションラベル ── */
+  .section-label { padding: 18px 24px 8px; font-size: 0.7rem; font-weight: 700; color: #8892a4; letter-spacing: 0.1em; text-transform: uppercase; }
+
+  /* ── KPIカード ── */
+  .kpi-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; padding: 0 24px 4px; }
+  .kpi-card { background: #fff; border-radius: 10px; padding: 14px 16px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); border-top: 4px solid #ccc; }
+  .kpi-card .co-name { font-size: 0.7rem; color: #777; font-weight: 600; margin-bottom: 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .kpi-card .count   { font-size: 1.6rem; font-weight: 800; line-height: 1; }
+  .kpi-card .wage    { font-size: 0.82rem; font-weight: 600; margin-top: 6px; color: #444; }
+  .kpi-card .delta   { font-size: 0.7rem; margin-top: 4px; }
   .delta.up   { color: #e53935; } .delta.down { color: #1e88e5; } .delta.flat { color: #aaa; }
   .c-tempstaff   { border-top-color: #e84040; } .c-recruit  { border-top-color: #2e75b6; }
   .c-staffsvc    { border-top-color: #375623; } .c-adecco   { border-top-color: #f4a100; }
   .c-manpower    { border-top-color: #7030a0; }
-  .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; padding: 8px 32px 0; }
-  @media(max-width:860px) { .charts-grid { grid-template-columns: 1fr; } }
-  .chart-card { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
-  .chart-card h3 { font-size: 0.88rem; font-weight: 700; color: #333; margin-bottom: 2px; }
-  .chart-card .sub { font-size: 0.72rem; color: #aaa; margin-bottom: 14px; }
-  .chart-wrap { position: relative; height: 240px; }
-  .table-section { margin: 14px 32px 32px; background: #fff; border-radius: 10px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); overflow: hidden; }
-  .table-section .t-header { padding: 16px 20px 12px; display: flex; align-items: baseline; gap: 10px; border-bottom: 1px solid #eee; }
-  .table-section .t-header h3 { font-size: 0.9rem; font-weight: 700; color: #333; }
-  .table-section .t-header span { font-size: 0.72rem; color: #aaa; }
-  table { width: 100%; border-collapse: collapse; font-size: 0.83rem; }
-  th { background: #f7f8fc; padding: 10px 16px; text-align: left; color: #666; font-weight: 600; border-bottom: 2px solid #eee; white-space: nowrap; }
-  td { padding: 11px 16px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
-  tr:last-child td { border-bottom: none; } tr:hover td { background: #fafbff; }
-  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; vertical-align: middle; }
-  .num { font-weight: 700; font-size: 1rem; }
-  .rank { display: inline-block; width: 22px; height: 22px; border-radius: 50%; background: #eee; color: #777; font-size: 0.72rem; font-weight: 700; text-align: center; line-height: 22px; }
+
+  /* ── グラフ ── */
+  .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 8px 24px 0; }
+  .chart-card { background: #fff; border-radius: 10px; padding: 18px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+  .chart-card h3 { font-size: 0.85rem; font-weight: 700; color: #333; margin-bottom: 2px; }
+  .chart-card .sub { font-size: 0.7rem; color: #aaa; margin-bottom: 12px; }
+  .chart-wrap { position: relative; height: 220px; }
+
+  /* ── テーブル ── */
+  .table-section { margin: 12px 24px 28px; background: #fff; border-radius: 10px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); overflow: hidden; }
+  .table-section .t-header { padding: 14px 18px 10px; display: flex; align-items: baseline; gap: 10px; border-bottom: 1px solid #eee; flex-wrap: wrap; }
+  .table-section .t-header h3 { font-size: 0.88rem; font-weight: 700; color: #333; }
+  .table-section .t-header span { font-size: 0.7rem; color: #aaa; }
+  .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.82rem; min-width: 480px; }
+  th { background: #f7f8fc; padding: 9px 14px; text-align: left; color: #666; font-weight: 600; border-bottom: 2px solid #eee; white-space: nowrap; }
+  td { padding: 10px 14px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
+  tr:last-child td { border-bottom: none; }
+  .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 7px; vertical-align: middle; flex-shrink: 0; }
+  .num { font-weight: 700; font-size: 0.95rem; }
+  .rank { display: inline-block; width: 22px; height: 22px; border-radius: 50%; background: #eee; color: #777; font-size: 0.7rem; font-weight: 700; text-align: center; line-height: 22px; }
   .rank-1 { background: #ffd700; color: #7a5000; } .rank-2 { background: #c0c0c0; color: #444; } .rank-3 { background: #cd7f32; color: #fff; }
-  footer { text-align: center; padding: 16px; font-size: 0.72rem; color: #bbb; }
+
+  footer { text-align: center; padding: 16px; font-size: 0.7rem; color: #bbb; }
+
+  /* ════════════════════════════
+     スマホ対応（600px以下）
+  ════════════════════════════ */
+  @media (max-width: 600px) {
+    /* ヘッダー：縦並び */
+    .header { flex-direction: column; align-items: flex-start; padding: 14px 16px; gap: 8px; }
+    .header-left h1 { font-size: 0.95rem; }
+    .header-right { text-align: left; }
+
+    /* お知らせ */
+    .notice { padding: 10px 16px; font-size: 0.75rem; }
+
+    /* セクションラベル */
+    .section-label { padding: 14px 16px 6px; }
+
+    /* KPIカード：2列 */
+    .kpi-row { grid-template-columns: repeat(2, 1fr); padding: 0 16px 4px; gap: 8px; }
+    .kpi-card { padding: 12px 12px; }
+    .kpi-card .count { font-size: 1.35rem; }
+    .kpi-card .wage  { font-size: 0.78rem; }
+
+    /* グラフ：1列 */
+    .charts-grid { grid-template-columns: 1fr; padding: 8px 16px 0; gap: 10px; }
+    .chart-wrap { height: 200px; }
+
+    /* テーブル */
+    .table-section { margin: 10px 16px 24px; }
+  }
+
+  /* タブレット（601〜860px）*/
+  @media (min-width: 601px) and (max-width: 860px) {
+    .header { padding: 16px 20px; }
+    .kpi-row { padding: 0 20px 4px; }
+    .charts-grid { grid-template-columns: 1fr; padding: 8px 20px 0; }
+    .section-label { padding: 16px 20px 6px; }
+    .table-section { margin: 12px 20px 24px; }
+  }
 </style>
 </head>
 <body>
@@ -55,11 +106,11 @@
   <div class="header-right">
     <div class="badge-live">● LIVE DATA</div><br>
     最終収集：2026-03-26（2026-W12）<br>
-    レポート生成：2026-03-26 01:14
+    生成：2026-03-26 10:34
   </div>
 </div>
 <div class="notice">
-  ✅ <strong>実データのみ表示しています。</strong>毎日11時のクローリング後に自動更新されます。
+  ✅ <strong>実データのみ表示。</strong>毎日11時のクローリング後に自動更新されます。
 </div>
 <div class="section-label">最新週 KPI（2026-W12）</div>
 <div class="kpi-row" id="kpiRow"></div>
@@ -82,16 +133,18 @@
     <h3>案件数ランキング</h3>
     <span>収集日: 2026-03-26（2026-W12）</span>
   </div>
+  <div class="table-scroll">
   <table>
     <thead>
       <tr>
         <th>順位</th><th>企業名</th>
         <th style="text-align:right">案件数</th><th style="text-align:right">シェア</th>
-        <th style="text-align:right">平均時給</th><th style="text-align:right">前週比（案件数）</th>
+        <th style="text-align:right">平均時給</th><th style="text-align:right">前週比</th>
       </tr>
     </thead>
     <tbody id="tableBody"></tbody>
   </table>
+  </div>
 </div>
 <footer>ManpowerGroup 事務派遣モニタリングツール ｜ 毎日11時 自動更新</footer>
 <script>
