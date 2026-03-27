@@ -258,9 +258,13 @@ REGIONS.forEach(r => {{
 }});
 
 // ── エリア切り替えメイン ─────────────────────────────────────────
-function switchRegion(region) {{
+function switchRegion(region, updateHash=true) {{
   const records = ALL_DATA[region] || [];
   const hasData = records.length > 0;
+
+  // URLハッシュを更新（リロード後も選択を維持するため）
+  if (updateHash) window.location.hash = encodeURIComponent(region);
+  sel.value = region;
 
   // お知らせバナー
   document.getElementById("noDataWarn").style.display = hasData ? "none" : "block";
@@ -394,8 +398,10 @@ function renderTable(records) {{
   }});
 }}
 
-// ── 初期表示（最初のエリア）────────────────────────────────────
-switchRegion(REGIONS[0]);
+// ── 初期表示（URLハッシュがあればそのエリア、なければ最初のエリア）──
+const hashRegion = decodeURIComponent(window.location.hash.slice(1));
+const initRegion = REGIONS.includes(hashRegion) ? hashRegion : REGIONS[0];
+switchRegion(initRegion, false);
 </script>
 
 </body>
