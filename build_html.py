@@ -95,11 +95,23 @@ def build_html(regions=None):
   .badge-live     {{ display: inline-block; background: #00c896; color: #fff; font-size: 0.65rem; font-weight: 700; padding: 2px 7px; border-radius: 10px; margin-bottom: 3px; }}
 
   /* ── エリア切り替え ── */
-  .region-bar {{ background: #fff; border-bottom: 2px solid #e8eaf0; padding: 12px 24px; display: flex; align-items: center; gap: 12px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }}
+  .region-bar {{ background: #fff; border-bottom: 2px solid #e8eaf0; padding: 12px 24px; display: flex; align-items: center; gap: 12px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.06); flex-wrap: wrap; }}
   .region-bar label {{ font-size: 0.78rem; font-weight: 700; color: #555; white-space: nowrap; }}
   .region-select {{ font-size: 0.92rem; font-weight: 700; color: #0d1b5e; background: #f0f4ff; border: 2px solid #1a3a8f; border-radius: 8px; padding: 6px 32px 6px 12px; cursor: pointer; appearance: none; -webkit-appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%231a3a8f' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 10px center; min-width: 160px; }}
   .region-select:focus {{ outline: none; border-color: #0d1b5e; box-shadow: 0 0 0 3px rgba(13,27,94,0.15); }}
   .region-data-note {{ font-size: 0.7rem; color: #aaa; margin-left: auto; }}
+
+  /* ── 日付フィルタ ── */
+  .date-bar {{ background: #f7f8fc; border-bottom: 1px solid #e8eaf0; padding: 8px 24px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }}
+  .date-bar label {{ font-size: 0.75rem; font-weight: 700; color: #555; white-space: nowrap; }}
+  .date-input {{ font-size: 0.82rem; color: #333; background: #fff; border: 1px solid #c8cfe0; border-radius: 6px; padding: 4px 8px; cursor: pointer; }}
+  .date-input:focus {{ outline: none; border-color: #1a3a8f; box-shadow: 0 0 0 2px rgba(13,27,94,0.12); }}
+  .date-sep {{ font-size: 0.8rem; color: #888; }}
+  .preset-btns {{ display: flex; gap: 6px; margin-left: 8px; flex-wrap: wrap; }}
+  .preset-btn {{ font-size: 0.72rem; font-weight: 600; padding: 3px 10px; border-radius: 12px; border: 1px solid #c8cfe0; background: #fff; color: #555; cursor: pointer; transition: all 0.15s; }}
+  .preset-btn:hover {{ background: #e8eeff; border-color: #1a3a8f; color: #1a3a8f; }}
+  .preset-btn.active {{ background: #1a3a8f; border-color: #1a3a8f; color: #fff; }}
+  .filter-note {{ font-size: 0.7rem; color: #aaa; margin-left: auto; }}
 
   /* ── お知らせ ── */
   .notice {{ background: #e8f5e9; border-left: 4px solid #43a047; padding: 10px 24px; font-size: 0.78rem; color: #1b5e20; }}
@@ -182,6 +194,20 @@ def build_html(regions=None):
   <span class="region-data-note" id="dataNote"></span>
 </div>
 
+<!-- 日付フィルタバー -->
+<div class="date-bar">
+  <label>📅 期間：</label>
+  <input type="date" id="dateFrom" class="date-input" onchange="applyDateFilter()">
+  <span class="date-sep">〜</span>
+  <input type="date" id="dateTo" class="date-input" onchange="applyDateFilter()">
+  <div class="preset-btns">
+    <button class="preset-btn" onclick="setPreset(7)">直近7日</button>
+    <button class="preset-btn" onclick="setPreset(30)">直近30日</button>
+    <button class="preset-btn active" id="btnAll" onclick="setPreset(0)">全期間</button>
+  </div>
+  <span class="filter-note" id="filterNote"></span>
+</div>
+
 <div class="notice">
   ✅ <strong>実データのみ表示。</strong>毎日11時のクローリング後に自動更新されます。
 </div>
@@ -257,34 +283,92 @@ REGIONS.forEach(r => {{
   sel.appendChild(opt);
 }});
 
+// ── 現在のエリア ─────────────────────────────────────────────────
+let currentRegion = REGIONS[0];
+
+// ── 日付フィルタ ─────────────────────────────────────────────────
+function getFilteredRecords(region) {{
+  const all = ALL_DATA[region] || [];
+  const from = document.getElementById("dateFrom").value;
+  const to   = document.getElementById("dateTo").value;
+  if (!from && !to) return all;
+  return all.filter(r => (!from || r.date >= from) && (!to || r.date <= to));
+}}
+
+function setPreset(days) {{
+  const all = ALL_DATA[currentRegion] || [];
+  const dates = all.map(r => r.date).sort();
+  const latest = dates[dates.length - 1] || "";
+
+  document.querySelectorAll(".preset-btn").forEach(b => b.classList.remove("active"));
+
+  if (days === 0) {{
+    // 全期間
+    document.getElementById("dateFrom").value = "";
+    document.getElementById("dateTo").value   = "";
+    document.getElementById("btnAll").classList.add("active");
+  }} else {{
+    // 直近N日：最新日からN日前を計算
+    const toDate   = latest ? new Date(latest) : new Date();
+    const fromDate = new Date(toDate);
+    fromDate.setDate(fromDate.getDate() - (days - 1));
+    document.getElementById("dateFrom").value = fromDate.toISOString().slice(0, 10);
+    document.getElementById("dateTo").value   = toDate.toISOString().slice(0, 10);
+    event.target.classList.add("active");
+  }}
+  applyDateFilter(false);
+}}
+
+function applyDateFilter(resetPreset=true) {{
+  if (resetPreset) {{
+    document.querySelectorAll(".preset-btn").forEach(b => b.classList.remove("active"));
+  }}
+  const filtered = getFilteredRecords(currentRegion);
+  renderAll(currentRegion, filtered);
+}}
+
 // ── エリア切り替えメイン ─────────────────────────────────────────
 function switchRegion(region, updateHash=true) {{
-  const records = ALL_DATA[region] || [];
-  const hasData = records.length > 0;
+  currentRegion = region;
+  const all     = ALL_DATA[region] || [];
 
-  // URLハッシュを更新（リロード後も選択を維持するため）
+  // URLハッシュを更新
   if (updateHash) window.location.hash = encodeURIComponent(region);
   sel.value = region;
 
+  // 日付入力のmin/maxをデータ範囲に合わせる
+  if (all.length > 0) {{
+    const dates = all.map(r => r.date).sort();
+    document.getElementById("dateFrom").min = dates[0];
+    document.getElementById("dateFrom").max = dates[dates.length - 1];
+    document.getElementById("dateTo").min   = dates[0];
+    document.getElementById("dateTo").max   = dates[dates.length - 1];
+  }}
+
   // お知らせバナー
-  document.getElementById("noDataWarn").style.display = hasData ? "none" : "block";
+  document.getElementById("noDataWarn").style.display = all.length > 0 ? "none" : "block";
 
-  // データ件数ノート
-  document.getElementById("dataNote").textContent =
-    hasData ? `${{records.length}}日分のデータ（${{records[0].date}} ～ ${{records[records.length-1].date}}）` : "データなし";
+  // データ件数ノート（全期間ベース）
+  document.getElementById("dataNote").textContent = all.length > 0
+    ? `全${{all.length}}日分（${{all[0].date}} ～ ${{all[all.length-1].date}}）`
+    : "データなし";
 
-  // セクションラベル
-  const latestDate = hasData ? records[records.length - 1].date : "—";
+  const filtered = getFilteredRecords(region);
+  renderAll(region, filtered);
+}}
+
+// ── 描画まとめ ───────────────────────────────────────────────────
+function renderAll(region, records) {{
+  const latestDate = records.length > 0 ? records[records.length - 1].date : "—";
   document.getElementById("kpiLabel").textContent   = `最新日 KPI（${{latestDate}}）`;
   document.getElementById("chartLabel").textContent = `日次推移（${{records.length}}日分）`;
   document.getElementById("countSub").textContent   = `各社の派遣求人掲載件数（${{region}}×事務職）`;
   document.getElementById("tableDate").textContent  = `収集日: ${{latestDate}}`;
-
-  // KPIカード
+  document.getElementById("filterNote").textContent = records.length > 0
+    ? `${{records.length}}日分を表示中`
+    : "該当データなし";
   renderKPI(records, region);
-  // グラフ
   renderCharts(records);
-  // テーブル
   renderTable(records);
 }}
 

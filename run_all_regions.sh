@@ -32,5 +32,5 @@ echo "===== 全エリア完了: $(date '+%Y-%m-%d %H:%M:%S') =====" >> "$LOG"
 
 # HTMLレポートを再生成（最新データを反映）
 echo "----- HTMLレポート生成開始: $(date '+%H:%M:%S') -----" >> "$LOG"
-"$PYTHON" /Users/mitsuhashitomohiro/staffing_monitor/build_html.py >> "$LOG" 2>&1
+"$PYTHON" /Users/mitsuhashitomohiro/staffing_monitor/build_html.py 北海道 宮城県 東京都 埼玉県 千葉県 神奈川県 愛知県 大阪府 広島県 福岡県 >> "$LOG" 2>&1
 echo "----- HTMLレポート生成完了: $(date '+%H:%M:%S') -----" >> "$LOG"
