@@ -1,0 +1,57 @@
+{
+  "scraped_at": "2026-02-16T12:53:31.338500",
+  "region": "埼玉県",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "region": "埼玉県",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 1490,
+      "avg_wage": 1599,
+      "remote_ratio": 16.9,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "region": "埼玉県",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 1046,
+      "avg_wage": 1692,
+      "remote_ratio": 20.8,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "region": "埼玉県",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 1285,
+      "avg_wage": 1526,
+      "remote_ratio": 14.6,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "region": "埼玉県",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 662,
+      "avg_wage": 1750,
+      "remote_ratio": 23.9,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "region": "埼玉県",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 470,
+      "avg_wage": 1627,
+      "remote_ratio": 15.2,
+      "error": null
+    }
+  ],
+  "_note": "これはデモデータです。実データはmonitor.pyで収集してください。"
+}

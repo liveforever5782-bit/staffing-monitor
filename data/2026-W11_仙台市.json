@@ -1,0 +1,57 @@
+{
+  "scraped_at": "2026-03-16T12:53:31.338500",
+  "region": "仙台市",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "region": "仙台市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 313,
+      "avg_wage": 1298,
+      "remote_ratio": 15.5,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "region": "仙台市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 232,
+      "avg_wage": 1377,
+      "remote_ratio": 16.5,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "region": "仙台市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 246,
+      "avg_wage": 1235,
+      "remote_ratio": 11.6,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "region": "仙台市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 119,
+      "avg_wage": 1405,
+      "remote_ratio": 19.1,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "region": "仙台市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 95,
+      "avg_wage": 1333,
+      "remote_ratio": 12.3,
+      "error": null
+    }
+  ],
+  "_note": "これはデモデータです。実データはmonitor.pyで収集してください。"
+}

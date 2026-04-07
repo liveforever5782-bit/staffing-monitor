@@ -1,0 +1,57 @@
+{
+  "scraped_at": "2026-03-16T12:53:31.338500",
+  "region": "川崎市",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "region": "川崎市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 536,
+      "avg_wage": 1605,
+      "remote_ratio": 19.4,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "region": "川崎市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 360,
+      "avg_wage": 1653,
+      "remote_ratio": 22.3,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "region": "川崎市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 437,
+      "avg_wage": 1505,
+      "remote_ratio": 14.4,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "region": "川崎市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 226,
+      "avg_wage": 1718,
+      "remote_ratio": 22.8,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "region": "川崎市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 160,
+      "avg_wage": 1606,
+      "remote_ratio": 16.7,
+      "error": null
+    }
+  ],
+  "_note": "これはデモデータです。実データはmonitor.pyで収集してください。"
+}

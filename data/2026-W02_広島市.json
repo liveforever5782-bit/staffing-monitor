@@ -1,0 +1,57 @@
+{
+  "scraped_at": "2026-01-12T12:53:31.338500",
+  "region": "広島市",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "region": "広島市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 270,
+      "avg_wage": 1313,
+      "remote_ratio": 12.8,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "region": "広島市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 226,
+      "avg_wage": 1411,
+      "remote_ratio": 18.1,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "region": "広島市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 244,
+      "avg_wage": 1277,
+      "remote_ratio": 11.7,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "region": "広島市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 128,
+      "avg_wage": 1460,
+      "remote_ratio": 20.4,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "region": "広島市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 100,
+      "avg_wage": 1381,
+      "remote_ratio": 12.5,
+      "error": null
+    }
+  ],
+  "_note": "これはデモデータです。実データはmonitor.pyで収集してください。"
+}

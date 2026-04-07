@@ -1,0 +1,57 @@
+{
+  "scraped_at": "2026-03-02T12:53:31.338500",
+  "region": "神戸市",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "region": "神戸市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 418,
+      "avg_wage": 1476,
+      "remote_ratio": 14.9,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "region": "神戸市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 321,
+      "avg_wage": 1541,
+      "remote_ratio": 19.0,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "region": "神戸市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 366,
+      "avg_wage": 1395,
+      "remote_ratio": 12.6,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "region": "神戸市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 190,
+      "avg_wage": 1591,
+      "remote_ratio": 20.7,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "region": "神戸市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 136,
+      "avg_wage": 1472,
+      "remote_ratio": 13.1,
+      "error": null
+    }
+  ],
+  "_note": "これはデモデータです。実データはmonitor.pyで収集してください。"
+}

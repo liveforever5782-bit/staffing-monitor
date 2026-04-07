@@ -1,0 +1,57 @@
+{
+  "scraped_at": "2026-03-23T12:53:31.338500",
+  "region": "北信越",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "region": "北信越",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 600,
+      "avg_wage": 1332,
+      "remote_ratio": 12.6,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "region": "北信越",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 450,
+      "avg_wage": 1392,
+      "remote_ratio": 15.8,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "region": "北信越",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 510,
+      "avg_wage": 1285,
+      "remote_ratio": 10.9,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "region": "北信越",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 270,
+      "avg_wage": 1451,
+      "remote_ratio": 20.1,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "region": "北信越",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 194,
+      "avg_wage": 1367,
+      "remote_ratio": 13.4,
+      "error": null
+    }
+  ],
+  "_note": "これはデモデータです。実データはmonitor.pyで収集してください。"
+}

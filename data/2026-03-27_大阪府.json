@@ -1,0 +1,56 @@
+{
+  "scraped_at": "2026-03-27T22:05:00.429616",
+  "region": "大阪府",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "region": "大阪府",
+      "url": "https://www.tempstaff.co.jp/jbch/jobList/osaka/sd-51/sk-01#list",
+      "count": 4621,
+      "avg_wage": 1589,
+      "remote_ratio": 0.0,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "region": "大阪府",
+      "url": "https://www.r-staffing.co.jp/sol/op21/sd02/?kinmuArea=EC000&solDutyCd=A00&sort=1&pageNo=1&hyouziSuu=20&c=y&",
+      "count": 653,
+      "avg_wage": 1539,
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "region": "大阪府",
+      "url": "https://www.staffservice.co.jp/osaka/office/haken/",
+      "count": 4128,
+      "avg_wage": 1546,
+      "remote_ratio": 10.0,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "region": "大阪府",
+      "url": "https://www.adecco.com/ja-jp/job/PO_JobListA?prefecture_city=%E5%A4%A7%E9%98%AA%E5%BA%9C&occupation=%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B9%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BB%E4%BA%8B%E5%8B%99%E7%B3%BB",
+      "count": 1058,
+      "avg_wage": 1580,
+      "remote_ratio": 5.0,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "region": "大阪府",
+      "url": "https://www.manpowerjobnet.com/search/result/list/?JobCtgryClassCdList=201&PrfctrCdList=27",
+      "count": 994,
+      "avg_wage": 1582,
+      "remote_ratio": null,
+      "error": null
+    }
+  ]
+}

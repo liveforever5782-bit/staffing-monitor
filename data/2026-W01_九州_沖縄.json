@@ -1,0 +1,57 @@
+{
+  "scraped_at": "2026-01-05T12:53:31.338500",
+  "region": "九州・沖縄",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "region": "九州・沖縄",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 1224,
+      "avg_wage": 1265,
+      "remote_ratio": 15.7,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "region": "九州・沖縄",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 918,
+      "avg_wage": 1357,
+      "remote_ratio": 16.7,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "region": "九州・沖縄",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 1160,
+      "avg_wage": 1245,
+      "remote_ratio": 10.4,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "region": "九州・沖縄",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 502,
+      "avg_wage": 1430,
+      "remote_ratio": 20.3,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "region": "九州・沖縄",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 418,
+      "avg_wage": 1346,
+      "remote_ratio": 13.2,
+      "error": null
+    }
+  ],
+  "_note": "これはデモデータです。実データはmonitor.pyで収集してください。"
+}

@@ -1,0 +1,57 @@
+{
+  "scraped_at": "2026-02-23T12:53:31.338500",
+  "region": "さいたま市",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "region": "さいたま市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 586,
+      "avg_wage": 1632,
+      "remote_ratio": 17.6,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "region": "さいたま市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 476,
+      "avg_wage": 1648,
+      "remote_ratio": 21.3,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "region": "さいたま市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 532,
+      "avg_wage": 1521,
+      "remote_ratio": 13.1,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "region": "さいたま市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 275,
+      "avg_wage": 1747,
+      "remote_ratio": 22.7,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "region": "さいたま市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 226,
+      "avg_wage": 1651,
+      "remote_ratio": 16.8,
+      "error": null
+    }
+  ],
+  "_note": "これはデモデータです。実データはmonitor.pyで収集してください。"
+}

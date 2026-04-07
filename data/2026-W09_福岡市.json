@@ -1,0 +1,57 @@
+{
+  "scraped_at": "2026-03-02T12:53:31.338500",
+  "region": "福岡市",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "region": "福岡市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 541,
+      "avg_wage": 1337,
+      "remote_ratio": 16.1,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "region": "福岡市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 348,
+      "avg_wage": 1393,
+      "remote_ratio": 17.3,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "region": "福岡市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 436,
+      "avg_wage": 1221,
+      "remote_ratio": 12.9,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "region": "福岡市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 223,
+      "avg_wage": 1436,
+      "remote_ratio": 20.3,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "region": "福岡市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 157,
+      "avg_wage": 1344,
+      "remote_ratio": 12.6,
+      "error": null
+    }
+  ],
+  "_note": "これはデモデータです。実データはmonitor.pyで収集してください。"
+}

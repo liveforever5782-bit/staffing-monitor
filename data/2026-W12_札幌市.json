@@ -1,0 +1,57 @@
+{
+  "scraped_at": "2026-03-23T12:53:31.338500",
+  "region": "札幌市",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "region": "札幌市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 361,
+      "avg_wage": 1288,
+      "remote_ratio": 12.4,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "region": "札幌市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 235,
+      "avg_wage": 1328,
+      "remote_ratio": 17.1,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "region": "札幌市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 274,
+      "avg_wage": 1190,
+      "remote_ratio": 10.5,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "region": "札幌市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 138,
+      "avg_wage": 1384,
+      "remote_ratio": 20.5,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "region": "札幌市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 113,
+      "avg_wage": 1317,
+      "remote_ratio": 11.6,
+      "error": null
+    }
+  ],
+  "_note": "これはデモデータです。実データはmonitor.pyで収集してください。"
+}

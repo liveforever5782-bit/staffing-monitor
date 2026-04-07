@@ -1,0 +1,57 @@
+{
+  "scraped_at": "2026-03-16T12:53:31.338500",
+  "region": "千葉市",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "region": "千葉市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 513,
+      "avg_wage": 1630,
+      "remote_ratio": 16.2,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "region": "千葉市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 359,
+      "avg_wage": 1673,
+      "remote_ratio": 21.1,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "region": "千葉市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 405,
+      "avg_wage": 1554,
+      "remote_ratio": 13.4,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "region": "千葉市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 198,
+      "avg_wage": 1698,
+      "remote_ratio": 23.7,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "region": "千葉市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 180,
+      "avg_wage": 1619,
+      "remote_ratio": 16.6,
+      "error": null
+    }
+  ],
+  "_note": "これはデモデータです。実データはmonitor.pyで収集してください。"
+}

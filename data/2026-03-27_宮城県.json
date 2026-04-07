@@ -1,0 +1,56 @@
+{
+  "scraped_at": "2026-03-27T23:58:05.987183",
+  "region": "宮城県",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "region": "宮城県",
+      "url": "https://www.tempstaff.co.jp/jbch/jobList/miyagi/sd-51/sk-01#list",
+      "count": 203,
+      "avg_wage": 1441,
+      "remote_ratio": 0.0,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "region": "宮城県",
+      "url": "https://www.r-staffing.co.jp/sol/op21/sd02/?kinmuArea=BC000&solDutyCd=A00&sort=1&pageNo=1&hyouziSuu=20&c=y&",
+      "count": 61,
+      "avg_wage": 1294,
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "region": "宮城県",
+      "url": "https://www.staffservice.co.jp/miyagi/office/haken/",
+      "count": 481,
+      "avg_wage": 1357,
+      "remote_ratio": 25.0,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "region": "宮城県",
+      "url": "https://www.adecco.com/ja-jp/job/PO_JobListA?prefecture_city=%E5%AE%AE%E5%9F%8E%E7%9C%8C&occupation=%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B9%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BB%E4%BA%8B%E5%8B%99%E7%B3%BB",
+      "count": 105,
+      "avg_wage": 1309,
+      "remote_ratio": 15.0,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "region": "宮城県",
+      "url": "https://www.manpowerjobnet.com/search/result/list/?JobCtgryClassCdList=201&PrfctrCdList=04",
+      "count": 118,
+      "avg_wage": 1281,
+      "remote_ratio": null,
+      "error": null
+    }
+  ]
+}

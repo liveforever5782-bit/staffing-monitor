@@ -1,0 +1,57 @@
+{
+  "scraped_at": "2025-12-29T12:53:31.338500",
+  "region": "横浜市",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "region": "横浜市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 884,
+      "avg_wage": 1596,
+      "remote_ratio": 18.1,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "region": "横浜市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 634,
+      "avg_wage": 1653,
+      "remote_ratio": 21.2,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "region": "横浜市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 759,
+      "avg_wage": 1520,
+      "remote_ratio": 14.7,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "region": "横浜市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 340,
+      "avg_wage": 1706,
+      "remote_ratio": 23.0,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "region": "横浜市",
+      "url": "[デモデータ] 実データはmonitor.pyを実行してください",
+      "count": 292,
+      "avg_wage": 1596,
+      "remote_ratio": 17.0,
+      "error": null
+    }
+  ],
+  "_note": "これはデモデータです。実データはmonitor.pyで収集してください。"
+}

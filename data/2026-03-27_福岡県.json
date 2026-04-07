@@ -1,0 +1,56 @@
+{
+  "scraped_at": "2026-03-27T23:34:53.729182",
+  "region": "福岡県",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "region": "福岡県",
+      "url": "https://www.tempstaff.co.jp/jbch/jobList/fukuoka/sd-51/sk-01#list",
+      "count": 934,
+      "avg_wage": 1386,
+      "remote_ratio": 10.0,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "region": "福岡県",
+      "url": "https://www.r-staffing.co.jp/sol/op21/sd02/?kinmuArea=HA000&solDutyCd=A00&sort=1&pageNo=1&hyouziSuu=20&c=y&",
+      "count": 226,
+      "avg_wage": 1416,
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "region": "福岡県",
+      "url": "https://www.staffservice.co.jp/fukuoka/office/haken/",
+      "count": 1183,
+      "avg_wage": 1351,
+      "remote_ratio": 10.0,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "region": "福岡県",
+      "url": "https://www.adecco.com/ja-jp/job/PO_JobListA?prefecture_city=%E7%A6%8F%E5%B2%A1%E7%9C%8C&occupation=%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B9%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BB%E4%BA%8B%E5%8B%99%E7%B3%BB",
+      "count": 149,
+      "avg_wage": 1377,
+      "remote_ratio": 25.0,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "region": "福岡県",
+      "url": "https://www.manpowerjobnet.com/search/result/list/?JobCtgryClassCdList=201&PrfctrCdList=40",
+      "count": 245,
+      "avg_wage": 1334,
+      "remote_ratio": null,
+      "error": null
+    }
+  ]
+}
