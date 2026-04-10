@@ -1,0 +1,66 @@
+{
+  "scraped_at": "2026-04-10T09:00:00",
+  "region": "東京都",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "count": 8228,
+      "avg_wage": 1850,
+      "region": "東京都",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "count": 2191,
+      "avg_wage": 1750,
+      "region": "東京都",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "count": 4842,
+      "avg_wage": 1750,
+      "region": "東京都",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "count": 4789,
+      "avg_wage": 1950,
+      "region": "東京都",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "count": 2067,
+      "avg_wage": 1800,
+      "region": "東京都",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "pasona",
+      "company_name": "パソナ",
+      "count": 3421,
+      "avg_wage": 1800,
+      "region": "東京都",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    }
+  ]
+}

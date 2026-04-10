@@ -1,0 +1,66 @@
+{
+  "scraped_at": "2026-04-10T11:30:00",
+  "region": "神奈川県",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "count": 1508,
+      "avg_wage": 1600,
+      "region": "神奈川県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "count": 327,
+      "avg_wage": 1550,
+      "region": "神奈川県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "count": 1693,
+      "avg_wage": 1550,
+      "region": "神奈川県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "count": 601,
+      "avg_wage": 1650,
+      "region": "神奈川県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "count": 254,
+      "avg_wage": 1600,
+      "region": "神奈川県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "pasona",
+      "company_name": "パソナ",
+      "count": 859,
+      "avg_wage": 1800,
+      "region": "神奈川県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    }
+  ]
+}

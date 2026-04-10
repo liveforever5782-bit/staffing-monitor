@@ -1,0 +1,66 @@
+{
+  "scraped_at": "2026-04-10T09:00:00",
+  "region": "北海道",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "count": 366,
+      "avg_wage": 1400,
+      "region": "北海道",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "count": 106,
+      "avg_wage": 1350,
+      "region": "北海道",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "count": 820,
+      "avg_wage": 1300,
+      "region": "北海道",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "count": 118,
+      "avg_wage": 1350,
+      "region": "北海道",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "count": 50,
+      "avg_wage": 1350,
+      "region": "北海道",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "pasona",
+      "company_name": "パソナ",
+      "count": 364,
+      "avg_wage": 1320,
+      "region": "北海道",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    }
+  ]
+}

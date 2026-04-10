@@ -1,0 +1,66 @@
+{
+  "scraped_at": "2026-04-10T09:00:00",
+  "region": "埼玉県",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "count": 706,
+      "avg_wage": 1450,
+      "region": "埼玉県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "count": 149,
+      "avg_wage": 1400,
+      "region": "埼玉県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "count": 635,
+      "avg_wage": 1500,
+      "region": "埼玉県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "count": 283,
+      "avg_wage": 1600,
+      "region": "埼玉県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "count": 186,
+      "avg_wage": 1600,
+      "region": "埼玉県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "pasona",
+      "company_name": "パソナ",
+      "count": 288,
+      "avg_wage": 1700,
+      "region": "埼玉県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    }
+  ]
+}

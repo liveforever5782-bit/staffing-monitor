@@ -1,0 +1,12 @@
+{
+  "scraped_at": "2026-04-10T11:00:00",
+  "region": "chiba",
+  "results": [
+    {"company": "tempstaff", "count": 763, "avg_wage": 1500},
+    {"company": "recruit", "count": 214, "avg_wage": 1600},
+    {"company": "staffservice", "count": 985, "avg_wage": 1500},
+    {"company": "adecco", "count": 234, "avg_wage": 1600},
+    {"company": "manpower", "count": 134, "avg_wage": 1600},
+    {"company": "pasona", "count": 619, "avg_wage": 1600}
+  ]
+}

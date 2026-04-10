@@ -1,0 +1,66 @@
+{
+  "scraped_at": "2026-04-10T11:00:00",
+  "region": "千葉県",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "count": 763,
+      "avg_wage": 1500,
+      "region": "千葉県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "count": 214,
+      "avg_wage": 1600,
+      "region": "千葉県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "count": 985,
+      "avg_wage": 1500,
+      "region": "千葉県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "count": 234,
+      "avg_wage": 1600,
+      "region": "千葉県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "count": 134,
+      "avg_wage": 1600,
+      "region": "千葉県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "pasona",
+      "company_name": "パソナ",
+      "count": 619,
+      "avg_wage": 1600,
+      "region": "千葉県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    }
+  ]
+}

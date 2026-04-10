@@ -1,0 +1,66 @@
+{
+  "scraped_at": "2026-04-10T09:00:00",
+  "region": "宮城県",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "count": 217,
+      "avg_wage": 1300,
+      "region": "宮城県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "count": 61,
+      "avg_wage": 1500,
+      "region": "宮城県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "count": 468,
+      "avg_wage": 1260,
+      "region": "宮城県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "count": 98,
+      "avg_wage": 1350,
+      "region": "宮城県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "count": 122,
+      "avg_wage": 1251,
+      "region": "宮城県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "pasona",
+      "company_name": "パソナ",
+      "count": 120,
+      "avg_wage": 1400,
+      "region": "宮城県",
+      "url": "",
+      "remote_ratio": null,
+      "error": null
+    }
+  ]
+}
