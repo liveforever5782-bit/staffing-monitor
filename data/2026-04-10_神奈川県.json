@@ -55,12 +55,13 @@
     {
       "company_id": "pasona",
       "company_name": "パソナ",
-      "count": 859,
-      "avg_wage": 1800,
+      "count": null,
+      "avg_wage": null,
       "region": "神奈川県",
       "url": "",
       "remote_ratio": null,
-      "error": null
+      "error": null,
+      "_note": "erroneous data removed (was count=859, wage=1800)"
     }
   ]
 }

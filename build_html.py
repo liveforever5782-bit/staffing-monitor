@@ -4,7 +4,7 @@ staffing_monitor/build_html.py
 data/ フォルダの実データから、エリア切り替えプルダウン付きHTMLレポートを生成するスクリプト
 
 使い方:
-    python3 build_html.py                           # デフォルト3エリア（東京都・大阪府・神奈川県）
+    python3 build_html.py                           # デフォルト全10エリア
     python3 build_html.py 東京都                    # 1エリアのみ
     python3 build_html.py 東京都 大阪府 神奈川県   # 任意の複数エリア指定
 """
@@ -17,8 +17,11 @@ from datetime import datetime
 # 実データ開始日（YYYY-MM-DD形式。デモデータ=週次ファイルは自動除外）
 REAL_DATA_START = "2026-03-01"
 
-# デフォルト対象エリア
-DEFAULT_REGIONS = ["東京都", "大阪府", "神奈川県"]
+# デフォルト対象エリア（全10エリア）
+DEFAULT_REGIONS = [
+    "北海道", "宮城県", "東京都", "埼玉県", "千葉県",
+    "神奈川県", "愛知県", "大阪府", "広島県", "福岡県",
+]
 
 
 def load_real_data(data_dir: Path, region: str) -> list[dict]:
@@ -49,8 +52,8 @@ def load_real_data(data_dir: Path, region: str) -> list[dict]:
 
 
 def build_html(regions=None):
-    # monitor.py から文字列で呼ばれた場合（例: build_html("大阪府")）は
-    # 常にデフォルト3エリアで生成してプルダウンを維持する
+    # monitor.py から文字列で呼ばれた場合（例: build_html("大阪府")）や
+    # 引数なしで呼ばれた場合は、常に全10エリアで生成してプルダウンを維持する
     if regions is None or isinstance(regions, str):
         regions = DEFAULT_REGIONS
 
