@@ -1,0 +1,66 @@
+{
+  "scraped_at": "2026-04-17T09:30:24.206235",
+  "region": "福岡県",
+  "results": [
+    {
+      "company_id": "tempstaff",
+      "company_name": "テンプスタッフ",
+      "region": "福岡県",
+      "url": "https://www.tempstaff.co.jp/jbch/jobList/fukuoka/sd-51/sk-01#list",
+      "count": 807,
+      "avg_wage": 1304,
+      "remote_ratio": 10.0,
+      "error": null
+    },
+    {
+      "company_id": "recruit_staffing",
+      "company_name": "リクルートスタッフィング",
+      "region": "福岡県",
+      "url": "https://www.r-staffing.co.jp/sol/op21/sd02/?kinmuArea=HA000&solDutyCd=A00&sort=1&pageNo=1&hyouziSuu=20&c=y&",
+      "count": 245,
+      "avg_wage": 1325,
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "staff_service",
+      "company_name": "スタッフサービス",
+      "region": "福岡県",
+      "url": "https://www.staffservice.co.jp/fukuoka/office/haken/",
+      "count": 1092,
+      "avg_wage": 1300,
+      "remote_ratio": 10.0,
+      "error": null
+    },
+    {
+      "company_id": "adecco",
+      "company_name": "アデコ",
+      "region": "福岡県",
+      "url": "https://www.adecco.com/ja-jp/job/PO_JobListA?prefecture_city=%E7%A6%8F%E5%B2%A1%E7%9C%8C&occupation=%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B9%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BB%E4%BA%8B%E5%8B%99%E7%B3%BB",
+      "count": 160,
+      "avg_wage": 1350,
+      "remote_ratio": 10.0,
+      "error": null
+    },
+    {
+      "company_id": "manpower",
+      "company_name": "マンパワーグループ",
+      "region": "福岡県",
+      "url": "https://www.manpowerjobnet.com/search/result/list/?JobCtgryClassCdList=201&PrfctrCdList=40",
+      "count": 213,
+      "avg_wage": 1330,
+      "remote_ratio": null,
+      "error": null
+    },
+    {
+      "company_id": "pasona",
+      "company_name": "パソナ",
+      "region": "福岡県",
+      "url": "https://www.pasona.co.jp/jobsearch/1009/result?place_wide_cd=1009&job_group_cd=133&job_group_cd=134&job_group_cd=135&job_group_cd=103&job_group_cd=104&job_group_cd=105&job_group_cd=106&job_group_cd=107&job_group_cd=115&job_group_cd=119&job_group_cd=121&salary_type=hour&income_ll=&income_ul=&dispatch_from__ymd=&place_pref_cd=40&keywords=",
+      "count": 508,
+      "avg_wage": 1400,
+      "remote_ratio": null,
+      "error": null
+    }
+  ]
+}
