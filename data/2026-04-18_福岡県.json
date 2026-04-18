@@ -27,10 +27,13 @@
       "company_name": "スタッフサービス",
       "region": "福岡県",
       "url": "https://www.staffservice.co.jp/fukuoka/office/haken/",
-      "count": null,
-      "avg_wage": null,
+      "count": 1092,
+      "avg_wage": 1300,
       "remote_ratio": null,
-      "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.staffservice.co.jp/fukuoka/office/haken/\","
+      "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.staffservice.co.jp/fukuoka/office/haken/\",",
+      "carried_over_count_from": "2026-04-17",
+      "carried_over_wage_from": "2026-04-17",
+      "carried_over": true
     },
     {
       "company_id": "adecco",
@@ -48,9 +51,11 @@
       "region": "福岡県",
       "url": "https://www.manpowerjobnet.com/search/result/list/?JobCtgryClassCdList=201&PrfctrCdList=40",
       "count": 206,
-      "avg_wage": null,
+      "avg_wage": 1330,
       "remote_ratio": null,
-      "error": "Page.goto: Timeout 20000ms exceeded.\nCall log:\n  - navigating to \"https://www.manpowerjobnet.com/search/result/list/?Job"
+      "error": "Page.goto: Timeout 20000ms exceeded.\nCall log:\n  - navigating to \"https://www.manpowerjobnet.com/search/result/list/?Job",
+      "carried_over_wage_from": "2026-04-17",
+      "carried_over": true
     },
     {
       "company_id": "pasona",

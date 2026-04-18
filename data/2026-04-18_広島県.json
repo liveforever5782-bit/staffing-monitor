@@ -27,10 +27,13 @@
       "company_name": "スタッフサービス",
       "region": "広島県",
       "url": "https://www.staffservice.co.jp/hiroshima/office/haken/",
-      "count": null,
-      "avg_wage": null,
+      "count": 651,
+      "avg_wage": 1300,
       "remote_ratio": null,
-      "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.staffservice.co.jp/hiroshima/office/haken/"
+      "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.staffservice.co.jp/hiroshima/office/haken/",
+      "carried_over_count_from": "2026-04-17",
+      "carried_over_wage_from": "2026-04-17",
+      "carried_over": true
     },
     {
       "company_id": "adecco",
