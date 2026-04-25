@@ -1,24 +1,24 @@
 {
-  "scraped_at": "2026-04-24T17:35:20.027177",
+  "scraped_at": "2026-04-25T10:04:21.664640",
   "region": "宮城県",
   "results": [
     {
       "company_id": "tempstaff",
       "company_name": "テンプスタッフ",
       "region": "宮城県",
-      "url": "https://www.tempstaff.co.jp/jbch/jobList/miyagi/sd-51/sk-01#list",
-      "count": 213,
-      "avg_wage": 1350,
-      "remote_ratio": 0.0,
-      "error": null
+      "url": "",
+      "count": null,
+      "avg_wage": null,
+      "remote_ratio": null,
+      "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.tempstaff.co.jp/jbch/jobList/miyagi/sd-51/"
     },
     {
       "company_id": "recruit_staffing",
       "company_name": "リクルートスタッフィング",
       "region": "宮城県",
       "url": "https://www.r-staffing.co.jp/sol/op21/sd02/?kinmuArea=BC000&solDutyCd=A00&sort=1&pageNo=1&hyouziSuu=20&c=y&",
-      "count": 66,
-      "avg_wage": 1300,
+      "count": 67,
+      "avg_wage": 1375,
       "remote_ratio": null,
       "error": null
     },
@@ -27,8 +27,8 @@
       "company_name": "スタッフサービス",
       "region": "宮城県",
       "url": "https://www.staffservice.co.jp/miyagi/office/haken/",
-      "count": 449,
-      "avg_wage": 1350,
+      "count": 440,
+      "avg_wage": 1330,
       "remote_ratio": 25.0,
       "error": null
     },
@@ -38,7 +38,7 @@
       "region": "宮城県",
       "url": "https://www.adecco.com/ja-jp/job/PO_JobListA?prefecture_city=%E5%AE%AE%E5%9F%8E%E7%9C%8C&occupation=%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B9%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BB%E4%BA%8B%E5%8B%99%E7%B3%BB",
       "count": 100,
-      "avg_wage": 1300,
+      "avg_wage": 1350,
       "remote_ratio": 15.0,
       "error": null
     },
@@ -47,7 +47,7 @@
       "company_name": "マンパワーグループ",
       "region": "宮城県",
       "url": "https://www.manpowerjobnet.com/search/result/list/?JobCtgryClassCdList=201&PrfctrCdList=04",
-      "count": 123,
+      "count": 119,
       "avg_wage": 1300,
       "remote_ratio": null,
       "error": null
