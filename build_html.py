@@ -384,7 +384,7 @@ function renderKPI(records, region) {{
   COMPANIES.forEach(co => {{
     const cur = latest[co.id] || {{}};
     const prv = prev ? (prev[co.id] || {{}}) : {{}};
-    const d   = prv.count != null ? pct(cur.count, prv.count) : null;
+    const d   = (cur.count != null && prv.count != null) ? pct(cur.count, prv.count) : null;
     let deltaHtml = "";
     if (d !== null) {{
       const sign = d > 0 ? "▲" : d < 0 ? "▼" : "→";
@@ -461,12 +461,12 @@ function renderTable(records) {{
   tbody.innerHTML = "";
   const total  = COMPANIES.reduce((s, co) => s + (latest[co.id]?.count ?? 0), 0);
   const ranked = COMPANIES
-    .map(co => ({{ ...co, count: latest[co.id]?.count ?? 0, wage: latest[co.id]?.wage ?? null }}))
-    .sort((a, b) => b.count - a.count);
+    .map(co => ({{ ...co, count: latest[co.id]?.count ?? null, wage: latest[co.id]?.wage ?? null }}))
+    .sort((a, b) => (b.count ?? -1) - (a.count ?? -1));
   ranked.forEach((co, idx) => {{
     const rank  = idx + 1;
     const prv   = prev ? (prev[co.id]?.count ?? null) : null;
-    const d     = prv != null ? pct(co.count, prv) : null;
+    const d     = (co.count != null && prv != null) ? pct(co.count, prv) : null;
     let deltaStr = records.length === 1 ? "初回" : "—";
     if (d !== null) {{
       const sign = d > 0 ? "▲" : d < 0 ? "▼" : "→";
@@ -478,7 +478,7 @@ function renderTable(records) {{
       <td><span class="${{rankCls}}">${{rank}}</span></td>
       <td><span class="dot" style="background:${{co.color}}"></span><span class="co-label">${{co.name}}</span></td>
       <td style="text-align:right"><span class="num">${{fmt(co.count)}}</span> 件</td>
-      <td style="text-align:right">${{total ? (co.count / total * 100).toFixed(1) + "%" : "—"}}</td>
+      <td style="text-align:right">${{(total && co.count != null) ? (co.count / total * 100).toFixed(1) + "%" : "—"}}</td>
       <td style="text-align:right">${{fmtY(co.wage)}}</td>
       <td style="text-align:right">${{deltaStr}}</td>
     </tr>`;
