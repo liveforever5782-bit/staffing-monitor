@@ -27,9 +27,9 @@
       "company_name": "スタッフサービス",
       "region": "千葉県",
       "url": "https://www.staffservice.co.jp/chiba/office/haken/",
-      "count": null,
-      "avg_wage": null,
-      "remote_ratio": null,
+      "count": 965,
+      "avg_wage": 1550,
+      "remote_ratio": 0.0,
       "error": null
     },
     {

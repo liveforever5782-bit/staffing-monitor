@@ -27,10 +27,10 @@
       "company_name": "スタッフサービス",
       "region": "福岡県",
       "url": "https://www.staffservice.co.jp/fukuoka/office/haken/",
-      "count": null,
-      "avg_wage": null,
-      "remote_ratio": null,
-      "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.staffservice.co.jp/fukuoka/office/haken/\","
+      "count": 1021,
+      "avg_wage": 1350,
+      "remote_ratio": 0.0,
+      "error": null
     },
     {
       "company_id": "adecco",

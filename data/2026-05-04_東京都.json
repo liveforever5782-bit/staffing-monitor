@@ -27,9 +27,9 @@
       "company_name": "スタッフサービス",
       "region": "東京都",
       "url": "https://www.staffservice.co.jp/tokyo/office/haken/",
-      "count": null,
-      "avg_wage": null,
-      "remote_ratio": null,
+      "count": 4921,
+      "avg_wage": 1800,
+      "remote_ratio": 0.0,
       "error": null
     },
     {
