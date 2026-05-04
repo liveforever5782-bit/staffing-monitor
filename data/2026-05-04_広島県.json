@@ -28,9 +28,9 @@
       "region": "広島県",
       "url": "https://www.staffservice.co.jp/hiroshima/office/haken/",
       "count": 661,
-      "avg_wage": null,
+      "avg_wage": 1300,
       "remote_ratio": 0.0,
-      "error": "site recovered from maintenance; wage not measurable from list page (count only)"
+      "error": null
     },
     {
       "company_id": "adecco",

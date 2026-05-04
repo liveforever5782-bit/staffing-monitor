@@ -28,9 +28,9 @@
       "region": "神奈川県",
       "url": "https://www.staffservice.co.jp/kanagawa/office/haken/",
       "count": 1751,
-      "avg_wage": null,
+      "avg_wage": 1600,
       "remote_ratio": 0.0,
-      "error": "site recovered from maintenance; wage not measurable from list page (count only)"
+      "error": null
     },
     {
       "company_id": "adecco",
