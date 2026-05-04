@@ -28,9 +28,9 @@
       "region": "千葉県",
       "url": "https://www.staffservice.co.jp/chiba/office/haken/",
       "count": 965,
-      "avg_wage": 1550,
+      "avg_wage": null,
       "remote_ratio": 0.0,
-      "error": null
+      "error": "site recovered from maintenance; wage not measurable from list page (count only)"
     },
     {
       "company_id": "adecco",
