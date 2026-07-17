@@ -17,10 +17,13 @@
       "company_name": "リクルートスタッフィング",
       "region": "東京都",
       "url": "https://www.r-staffing.co.jp/sol/op21/sd02/?kinmuArea=CF000&solDutyCd=A00&sort=1&pageNo=1&hyouziSuu=20&&c=y&",
-      "count": 20,
-      "avg_wage": null,
+      "count": 2350,
+      "avg_wage": 1840,
       "remote_ratio": null,
-      "error": null
+      "error": null,
+      "_original_count": 20,
+      "_original_avg_wage": null,
+      "_data_quality_note": "スクレイピング異常値（クロールエラー）のため前後日（2026-07-11/2026-07-13）の平均で補間。元の値: count=20, wage=None"
     },
     {
       "company_id": "staff_service",

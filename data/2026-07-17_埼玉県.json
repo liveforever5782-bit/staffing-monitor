@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-16T09:08:47.182841",
+  "scraped_at": "2026-07-17T09:09:25.925985",
   "region": "埼玉県",
   "results": [
     {
@@ -7,32 +7,29 @@
       "company_name": "テンプスタッフ",
       "region": "埼玉県",
       "url": "https://www.tempstaff.co.jp/jbch/jobList/saitama/sd-51/sk-01#list",
-      "count": 755,
-      "avg_wage": 1600,
-      "remote_ratio": 0.0,
+      "count": 742,
+      "avg_wage": 1550,
+      "remote_ratio": 5.0,
       "error": null
     },
     {
       "company_id": "recruit_staffing",
       "company_name": "リクルートスタッフィング",
       "region": "埼玉県",
-      "url": "https://www.r-staffing.co.jp/sol/op21/sd02/?kinmuArea=CD000&solDutyCd=A00&sort=1&pageNo=1&hyouziSuu=20&",
-      "count": 156,
-      "avg_wage": 1625,
+      "url": "https://www.r-staffing.co.jp/sol/op21/sd02/?kinmuArea=CD000&solDutyCd=A00&sort=1&pageNo=1&hyouziSuu=20&c=y&",
+      "count": 158,
+      "avg_wage": 1650,
       "remote_ratio": null,
-      "error": null,
-      "_original_count": null,
-      "_original_avg_wage": null,
-      "_data_quality_note": "スクレイピング異常値（クロールエラー）のため前後日（2026-07-15/2026-07-17）の平均で補間。元の値: count=None, wage=None"
+      "error": null
     },
     {
       "company_id": "staff_service",
       "company_name": "スタッフサービス",
       "region": "埼玉県",
       "url": "https://www.staffservice.co.jp/saitama/office/haken/",
-      "count": 668,
-      "avg_wage": 1550,
-      "remote_ratio": 25.0,
+      "count": 683,
+      "avg_wage": 1500,
+      "remote_ratio": 10.0,
       "error": null
     },
     {
@@ -40,8 +37,8 @@
       "company_name": "アデコ",
       "region": "埼玉県",
       "url": "https://www.adecco.com/ja-jp/job/PO_JobListA?prefecture_city=%E5%9F%BC%E7%8E%89%E7%9C%8C&occupation=%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B9%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BB%E4%BA%8B%E5%8B%99%E7%B3%BB",
-      "count": 299,
-      "avg_wage": 1530,
+      "count": 290,
+      "avg_wage": 1590,
       "remote_ratio": 15.0,
       "error": null
     },
@@ -51,7 +48,7 @@
       "region": "埼玉県",
       "url": "https://www.manpowerjobnet.com/search/result/list/?JobCtgryClassCdList=201&PrfctrCdList=11",
       "count": 166,
-      "avg_wage": 1600,
+      "avg_wage": 1550,
       "remote_ratio": null,
       "error": null
     },

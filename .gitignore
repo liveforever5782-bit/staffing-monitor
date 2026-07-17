@@ -1,0 +1,5 @@
+.github_pat
+__pycache__/
+*.pyc
+auto_run.log
+debug_*.txt
