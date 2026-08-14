@@ -12,10 +12,13 @@ data/ フォルダの実データから、エリア切り替えプルダウン�
 import json
 import sys
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # 実データ開始日（YYYY-MM-DD形式。デモデータ=週次ファイルは自動除外）
 REAL_DATA_START = "2026-03-01"
+
+# HTMLレポートに表示する直近の日数（視認性のため制限）
+DISPLAY_DAYS = 60
 
 # デフォルト対象エリア（全10エリア）
 DEFAULT_REGIONS = [
@@ -25,8 +28,9 @@ DEFAULT_REGIONS = [
 
 
 def load_real_data(data_dir: Path, region: str) -> list[dict]:
-    """指定エリアのJSONを読み込む（日次ファイル YYYY-MM-DD のみ）"""
+    """指定エリアのJSONを読み込む（日次ファイル YYYY-MM-DD のみ、直近 DISPLAY_DAYS 日分）"""
     safe = region.replace("/", "_").replace("・", "_")
+    cutoff = (datetime.now() - timedelta(days=DISPLAY_DAYS)).strftime("%Y-%m-%d")
     rows = []
     for f in sorted(data_dir.glob(f"*_{safe}.json")):
         try:
@@ -35,6 +39,8 @@ def load_real_data(data_dir: Path, region: str) -> list[dict]:
             if not label.count("-") == 2:
                 continue
             if label < REAL_DATA_START:
+                continue
+            if label < cutoff:
                 continue
             obj = json.loads(f.read_text(encoding="utf-8"))
             scraped_at = obj.get("scraped_at", "")[:10]
