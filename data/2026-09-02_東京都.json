@@ -37,10 +37,11 @@
       "company_name": "アデコ",
       "region": "東京都",
       "url": "https://www.adecco.com/ja-jp/job/PO_JobListA?prefecture_city=%E6%9D%B1%E4%BA%AC%E9%83%BD&occupation=%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B9%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BB%E4%BA%8B%E5%8B%99%E7%B3%BB",
-      "count": 100,
-      "avg_wage": 1330,
+      "count": 5826,
+      "avg_wage": 1775,
       "remote_ratio": 15.0,
-      "error": null
+      "error": null,
+      "note": "スクレイピング異常値のため前後日から補間"
     },
     {
       "company_id": "manpower",
