@@ -28,9 +28,8 @@ DEFAULT_REGIONS = [
 
 
 def load_real_data(data_dir: Path, region: str) -> list[dict]:
-    """指定エリアのJSONを読み込む（日次ファイル YYYY-MM-DD のみ、直近 DISPLAY_DAYS 日分）"""
+    """指定エリアのJSONを読み込む（日次ファイル YYYY-MM-DD のみ・全期間）"""
     safe = region.replace("/", "_").replace("・", "_")
-    cutoff = (datetime.now() - timedelta(days=DISPLAY_DAYS)).strftime("%Y-%m-%d")
     rows = []
     for f in sorted(data_dir.glob(f"*_{safe}.json")):
         try:
@@ -39,8 +38,6 @@ def load_real_data(data_dir: Path, region: str) -> list[dict]:
             if not label.count("-") == 2:
                 continue
             if label < REAL_DATA_START:
-                continue
-            if label < cutoff:
                 continue
             obj = json.loads(f.read_text(encoding="utf-8"))
             scraped_at = obj.get("scraped_at", "")[:10]
@@ -212,7 +209,8 @@ def build_html(regions=None):
   <div class="preset-btns">
     <button class="preset-btn" onclick="setPreset(7)">直近7日</button>
     <button class="preset-btn" onclick="setPreset(30)">直近30日</button>
-    <button class="preset-btn active" id="btnAll" onclick="setPreset(0)">全期間</button>
+    <button class="preset-btn active" id="btn60" onclick="setPreset(60)">直近60日</button>
+    <button class="preset-btn" id="btnAll" onclick="setPreset(0)">全期間</button>
   </div>
   <span class="filter-note" id="filterNote"></span>
 </div>
@@ -323,7 +321,9 @@ function setPreset(days) {{
     fromDate.setDate(fromDate.getDate() - (days - 1));
     document.getElementById("dateFrom").value = fromDate.toISOString().slice(0, 10);
     document.getElementById("dateTo").value   = toDate.toISOString().slice(0, 10);
-    event.target.classList.add("active");
+    const btnId = days === 60 ? "btn60" : null;
+    if (btnId) document.getElementById(btnId).classList.add("active");
+    else if (event && event.target) event.target.classList.add("active");
   }}
   applyDateFilter(false);
 }}
@@ -495,6 +495,8 @@ function renderTable(records) {{
 const hashRegion = decodeURIComponent(window.location.hash.slice(1));
 const initRegion = REGIONS.includes(hashRegion) ? hashRegion : REGIONS[0];
 switchRegion(initRegion, false);
+// デフォルトは直近60日表示（カレンダーで全期間に切替可能）
+setPreset(60);
 </script>
 
 </body>
